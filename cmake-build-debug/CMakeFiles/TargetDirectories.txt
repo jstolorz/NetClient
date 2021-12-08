@@ -1,0 +1,3 @@
+C:/Users/jstol/CLionProjects/NetClient/cmake-build-debug/CMakeFiles/NetClient.dir
+C:/Users/jstol/CLionProjects/NetClient/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/jstol/CLionProjects/NetClient/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+C:\Users\jstol\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\NetClient.dir/objects.a
+C:\cpp-compilers\mingw64\bin\ar.exe cr CMakeFiles\NetClient.dir/objects.a @CMakeFiles\NetClient.dir\objects1.rsp
+C:\cpp-compilers\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\NetClient.dir/objects.a -Wl,--no-whole-archive -o NetClient.exe -Wl,--out-implib,libNetClient.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\NetClient.dir\linklibs.rsp
