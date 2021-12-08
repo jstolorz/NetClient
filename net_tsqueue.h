@@ -11,6 +11,7 @@ namespace olc {
         public:
             Tsqueue() = default;
             Tsqueue(const Tsqueue<T>&) = delete;
+            virtual ~Tsqueue(){ clear(); }
 
         public:
             // Returns and maintains item at front of Queue
@@ -47,6 +48,22 @@ namespace olc {
             void clear(){
                 std::scoped_lock lock(muxQueue);
                 deqQueue.clear();
+            }
+
+            // Remove and returns item from front of Queue
+            T pop_front(){
+                std::scoped_lock lock(muxQueue);
+                auto t = std::move(deqQueue.front());
+                deqQueue.pop_front();
+                return t;
+            }
+
+            // Remove and returns item from back of Queue
+            T pop_back(){
+                std::scoped_lock lock(muxQueue);
+                auto t = std::move(deqQueue.back());
+                deqQueue.pop_back();
+                return t;
             }
 
         protected:
